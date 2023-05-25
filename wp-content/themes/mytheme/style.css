@@ -1,0 +1,72 @@
+/*
+Theme Name: my-theme
+Theme URI: https://welabs.com/
+Author: welabs
+Author URI: https://welabs.com
+Description: My-theme is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
+Version: 1.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, education
+Text Domain: mytheme
+
+*/
+
+
+h1.heading {
+    font-family: "Arial Black";
+    width: 700px;
+    margin: auto;
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+h3.tagline {
+    font-family: Arial;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    width: 700px;
+    text-align: center;
+}
+
+h2.post-title {
+    margin-bottom: 30px;
+}
+
+.post {
+    margin-bottom: 50px;
+}
+
+.post p {
+    font-family: "Helvetica Neue";
+    line-height: 1.7em;
+    font-size: 18px;
+}
+
+.post .row:nth-child(2) {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.post:last-child .row:nth-child(2) {
+    border-bottom: none;
+}
+
+.footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #222;
+    color: #ccc;
+}
+
+.tags li {
+    color: #3D9970;
+}
+
+.post-pagination {
+    margin-bottom: 50px;
+}
