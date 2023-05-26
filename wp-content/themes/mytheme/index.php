@@ -2,7 +2,20 @@
 
 <!-- body class used for style -->
 <body <?php body_class(); ?> >
-<?php get_template_part("hero"); ?>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="tagline">
+                    <?php bloginfo("description") ?>
+                </h3>
+                <h1 class="align-self-center display-1 text-center heading">
+                    <?php bloginfo("name"); ?> 
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- post -->
 <div class="posts">
@@ -42,15 +55,14 @@
                             if( has_post_thumbnail() ){
                                 the_post_thumbnail("large",array("class"=>"img-fluid"));
                             }
+
+                            the_excerpt();   
                         ?> 
                     
                     </p>   
          <!-- if it is a single post then show the full content 
         otherwise show the readmore or not show full content -->
 
-                   <?php                         
-                      the_excerpt();                      
-                   ?>
                    
                 </div>
             </div>
@@ -71,7 +83,7 @@
                     the_posts_pagination( array(
                         "screen_reader_text"=>'',
                         "prev_text"=>'Previous',
-                        "next text"=>'Next'
+                        "next_text"=>'Next'
                     ));
                 ?>
             </div>
