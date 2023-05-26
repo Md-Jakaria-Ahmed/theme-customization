@@ -40,24 +40,23 @@
                             if( has_post_thumbnail() ){
                                 the_post_thumbnail("large",array("class"=>"img-fluid"));
                             }
-                        ?> 
+                      
+
+                        the_content();
+                     
+                        echo"next:";next_post_link();
+                         echo "<br>";
+                        echo"previous:";previous_post_link();
+
+                     ?>
                     
                     </p>   
-         <!-- if it is a single post then show the full content 
-        otherwise show the readmore or not show full content -->
-
-                   <?php  
-                     the_content();
-                   ?>
                    
                 </div>
         <!-- coment section -->
-             <?php if(comments_open()){ ?>
-                <div class="col-md-10 offset-md-1">
-                    <?php comments_template() ; ?>
-                 </div>
-             <?php } ?>
+            
             </div>
+            
 
         </div>
     </div>
