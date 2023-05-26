@@ -52,9 +52,7 @@ https://zakaria-ahmed.blogspot.com/
 __disable automatic link__  
 [Here is my blog site](https://zakaria-ahmed.blogspot.com/)  
 
-__My Profile Image__  
 
-![natural_image](https://cdn.fordhamram.com/wp-content/uploads/OnlineGitGitHubCourses.jpg)
 
 
 
