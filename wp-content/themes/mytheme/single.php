@@ -45,12 +45,18 @@
                                 
 
                                 the_content();
-                                
-                                echo"next:";next_post_link();
-                                    echo "<br>";
-                                echo"previous:";previous_post_link();
-
                                 ?>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <?php  echo"Previous:";next_post_link(); ?>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <?php   echo"Next:";previous_post_link(); ?>
+                                    </div>
+                                 
+                               
+                                </div>
+                               
                             
                             </p>   
                             

@@ -14,6 +14,7 @@ function mytheme_assets(){
 }
 add_action("wp_enqueue_scripts","mytheme_assets");
 
+// this function working for sidebar
 function mytheme_sidebar(){
     register_sidebar( 
          array(
@@ -26,5 +27,29 @@ function mytheme_sidebar(){
             'after_title'    => '</h2>',
          ) 
     );
+
+    register_sidebar( 
+        array(
+           'name'           => __('Footer Left','mytheme'),
+           'id'             => 'footer-left',
+           'description'    => __('Footer Left Widget','mytheme'),          
+           'before_widget'  => '<section id="%1$s" class="widget %2$s">',
+           'after_widget'   => '</section>',
+           'before_title'   => '<h2 class="widget-title">',
+           'after_title'    => '</h2>',
+        ) 
+   );
+
+   register_sidebar( 
+    array(
+       'name'           => __('Footer Right','mytheme'),
+       'id'             => 'footer-right',
+       'description'    => __('Footer Right Widget','mytheme'),          
+       'before_widget'  => '<section id="%1$s" class="widget %2$s">',
+       'after_widget'   => '</section>',
+       'before_title'   => '<h2 class="widget-title">',
+       'after_title'    => '</h2>',
+    ) 
+);
 }
 add_action( "widgets_init","mytheme_sidebar");
