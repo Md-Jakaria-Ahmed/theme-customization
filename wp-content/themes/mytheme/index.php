@@ -55,8 +55,19 @@
                             if( has_post_thumbnail() ){
                                 the_post_thumbnail("large",array("class"=>"img-fluid"));
                             }
+        //   password protected post , this is one way and
+        //   another way is using function with filter hook
+                        /*
+                            if(!post_password_required()){
+                                the_excerpt();
+                            }else{
+                               echo get_the_password_form();
+                            }
+                         */
+                    
+                            the_excerpt();
 
-                            the_excerpt();   
+                               
                         ?> 
                     
                     </p>   

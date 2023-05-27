@@ -53,3 +53,19 @@ function mytheme_sidebar(){
 );
 }
 add_action( "widgets_init","mytheme_sidebar");
+
+
+// post password protected
+function mytheme_the_excerpt($excerpt){
+    if(!post_password_required()){
+        return $excerpt;
+    }else{
+        echo get_the_password_form();
+    }
+}
+add_filter("the_excerpt", "mytheme_the_excerpt");
+
+function mytheme_protected_title_change(){
+    return "%s";
+}
+add_filter("protected_title_format", "mytheme_protected_title_change");
